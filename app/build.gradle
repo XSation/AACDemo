@@ -15,6 +15,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -22,9 +26,12 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
 
+
+
     // Lifecycles, LiveData 和 ViewModel
     implementation "android.arch.lifecycle:runtime:1.0.0-alpha5"
     implementation "android.arch.lifecycle:extensions:1.0.0-alpha5"
+    implementation "android.arch.lifecycle:extensions:1.0.0-alpha9"
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha5"
 // Room
     implementation "android.arch.persistence.room:runtime:1.0.0-alpha5"
